@@ -1,7 +1,7 @@
 Amorecoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/amorecoin/amorecoin.svg?branch=master)](https://travis-ci.org/amorecoin-project/amorecoin)
+[![Build Status](https://travis-ci.org/amorecoin/amorecoin.svg?branch=master)](https://travis-ci.org/amorecoin/amorecoin)
 
 https://amorecoin.org
 
