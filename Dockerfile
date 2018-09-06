@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-
+COPY ./amorecoin.conf /root/.amorecoin/amorecoin.conf
 COPY . /amorecoin
 WORKDIR /amorecoin
 
