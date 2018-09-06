@@ -283,15 +283,15 @@ public:
 
         pchMessageStart[0] = 0xfa;
         pchMessageStart[1] = 0xbf;
-        pchMessageStart[2] = 0xb5;
-        pchMessageStart[3] = 0xda;
-        nDefaultPort = 19444;
+        pchMessageStart[2] = 0x10;
+        pchMessageStart[3] = 0x7e;
+        nDefaultPort = 19123;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 0, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1296688602, 2084987582, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(consensus.hashGenesisBlock == uint256S("0x429819fad91dc15899c4877ebebf1bc34773765d750bdcf46984b06bfbea294d"));
+        assert(genesis.hashMerkleRoot == uint256S("0x137aa65b86feaa09f3b6d96a2d88f2b231a0cc6226bdee62a9cb7e6de2ed6e1f"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -302,7 +302,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {0, uint256S("530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9")},
+                {0, uint256S("429819fad91dc15899c4877ebebf1bc34773765d750bdcf46984b06bfbea294d")},
             }
         };
 
